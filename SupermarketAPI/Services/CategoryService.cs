@@ -11,11 +11,6 @@ using SupermarketAPI.Persistance.Repositories;
 
 namespace SupermarketAPI.Services
 {
-    /*
-     * A service class is not a class that should handle data access.
-     * There is a pattern called Repository Pattern that is used to manage data from databases.
-     * Our service needs to talk to a category repository, to get the list of objects.
-     */
     public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository _categoryRepository;
