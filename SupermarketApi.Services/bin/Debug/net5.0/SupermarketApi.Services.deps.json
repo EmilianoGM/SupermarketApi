@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SupermarketApi.Services/1.0.0": {
+        "runtime": {
+          "SupermarketApi.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SupermarketApi.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

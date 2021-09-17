@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SupermarketAPI.Resources
+namespace SupermarketApi.WebApi.Resources
 {
     public class SaveProductResource
     {
@@ -19,5 +19,10 @@ namespace SupermarketAPI.Resources
         public int UnitOfMeasurement { get; set; }
         [Required]
         public int CategoryId { get; set; }
+        [Required]
+        public float Price { get; set; }
+        [Required]
+        [MaxLength(150)]
+        public string ImgUrl { get; set; }
     }
 }

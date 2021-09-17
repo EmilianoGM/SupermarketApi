@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using SupermarketAPI.Domain.Models;
-using SupermarketAPI.Resources;
+using SupermarketApi.Entities;
+using SupermarketApi.WebApi.Resources;
 
 namespace SupermarketAPI.Mapping
 {
@@ -13,6 +13,8 @@ namespace SupermarketAPI.Mapping
         public ResourceToModelProfile()
         {
             CreateMap<SaveCategoryResource, Category>();
+            //CreateMap<SaveProductResource, Product>();
+                
             CreateMap<SaveProductResource, Product>().ForMember(p => p.UnitOfMeasurement, 
                 opt => opt.MapFrom(p => (EUnitOfMeasurement)p.UnitOfMeasurement));
         }

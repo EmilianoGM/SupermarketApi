@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketAPI", "SupermarketAPI.csproj", "{578F917F-9DCC-462D-B359-7195B27C4658}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermarketApi.WebApi", "SupermarketApi.WebApi.csproj", "{578F917F-9DCC-462D-B359-7195B27C4658}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermarketApi.Application", "..\SupermarketAPI.Application\SupermarketApi.Application.csproj", "{8ACBB067-3C94-4044-886D-33711EF59C20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermarketApi.Entities", "..\SupermarketApi.Entities\SupermarketApi.Entities.csproj", "{B75965BF-29C0-4637-B46E-553253E4C027}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermarketApi.Repository", "..\SupermarketApi.Repository\SupermarketApi.Repository.csproj", "{F61C3D87-B9EE-42CA-92C8-AF9967D926EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermarketApi.DataAccess", "..\SupermarketApi.DataAccess\SupermarketApi.DataAccess.csproj", "{53D92075-E6F0-48E7-8C94-266115E29939}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermarketApi.Services", "..\SupermarketApi.Services\SupermarketApi.Services.csproj", "{4FD86F10-C514-4E6E-90A3-275B5811C6DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermarketApi.Abstractions", "..\SupermarketApi.Abstractions\SupermarketApi.Abstractions.csproj", "{C08C5129-93C1-42E0-AE3F-73CED803DE0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{578F917F-9DCC-462D-B359-7195B27C4658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{578F917F-9DCC-462D-B359-7195B27C4658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{578F917F-9DCC-462D-B359-7195B27C4658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACBB067-3C94-4044-886D-33711EF59C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACBB067-3C94-4044-886D-33711EF59C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACBB067-3C94-4044-886D-33711EF59C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACBB067-3C94-4044-886D-33711EF59C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B75965BF-29C0-4637-B46E-553253E4C027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B75965BF-29C0-4637-B46E-553253E4C027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B75965BF-29C0-4637-B46E-553253E4C027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B75965BF-29C0-4637-B46E-553253E4C027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61C3D87-B9EE-42CA-92C8-AF9967D926EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61C3D87-B9EE-42CA-92C8-AF9967D926EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61C3D87-B9EE-42CA-92C8-AF9967D926EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61C3D87-B9EE-42CA-92C8-AF9967D926EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D92075-E6F0-48E7-8C94-266115E29939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D92075-E6F0-48E7-8C94-266115E29939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D92075-E6F0-48E7-8C94-266115E29939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D92075-E6F0-48E7-8C94-266115E29939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD86F10-C514-4E6E-90A3-275B5811C6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD86F10-C514-4E6E-90A3-275B5811C6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD86F10-C514-4E6E-90A3-275B5811C6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD86F10-C514-4E6E-90A3-275B5811C6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08C5129-93C1-42E0-AE3F-73CED803DE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08C5129-93C1-42E0-AE3F-73CED803DE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08C5129-93C1-42E0-AE3F-73CED803DE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08C5129-93C1-42E0-AE3F-73CED803DE0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

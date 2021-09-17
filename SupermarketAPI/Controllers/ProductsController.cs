@@ -1,34 +1,76 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using SupermarketAPI.Domain.Models;
-using SupermarketAPI.Domain.Services;
-using SupermarketAPI.Resources;
+using SupermarketApi.WebApi.Resources;
 using SupermarketAPI.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SupermarketApi.Abstractions.Applications;
+using SupermarketApi.Entities;
+using SupermarketApi.Application.Communication;
 
 namespace SupermarketAPI.Controllers
 {
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {
-        private readonly IProductService _productService;
+        private readonly IProductApplication _productApplication;
         private readonly IMapper _mapper;
 
-        public ProductsController(IProductService productService, IMapper mapper)
+        public ProductsController(IProductApplication productApplication, IMapper mapper)
         {
-            _productService = productService;
+            _productApplication = productApplication;
             _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<IEnumerable<ProductResource>> GetListAsync()
+        public async Task<IActionResult> GetListAsync()
         {
-            var products = await _productService.ListAsync();
-            var productsResource = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(products);
-            return productsResource;
+            var productsResponse = await _productApplication.ListAsync();
+
+            if (productsResponse.Succeeded)
+            {
+                var productsResource = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(productsResponse.Data);
+                return Ok(new ResponseWrapper<IEnumerable<ProductResource>>(productsResource));
+            }
+            else
+            {
+                return BadRequest(productsResponse);
+            }
+        }
+
+        [HttpGet]
+        [Route("name/{name}")]
+        public async Task<IActionResult> GetListByNameAsync(string name)
+        {
+            var productsResponse = await _productApplication.ListByNameAsync(name);
+
+            if (productsResponse.Succeeded)
+            {
+                var productsResource = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(productsResponse.Data);
+                return Ok(new ResponseWrapper<IEnumerable<ProductResource>>(productsResource));
+            }
+            else
+            {
+                return BadRequest(productsResponse);
+            }
+        }
+
+        [HttpGet]
+        [Route("category/{categoryId}")]
+        public async Task<IActionResult> GetListByNameAsync(int categoryId)
+        {
+            var productsResponse = await _productApplication.ListByCategoryAsync(categoryId);
+            if (productsResponse.Succeeded)
+            {
+                var productsResource = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(productsResponse.Data);
+                return Ok(new ResponseWrapper<IEnumerable<ProductResource>>(productsResource));
+            }
+            else
+            {
+                return BadRequest(productsResponse);
+            }
         }
 
         [HttpPost]
@@ -36,15 +78,16 @@ namespace SupermarketAPI.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState.GetErrorMessages());
             var product = _mapper.Map<SaveProductResource, Product>(resource);
-            var result = await _productService.SaveAsync(product);
-            if (!result.Success)
+            var response = await _productApplication.AddAsync(product);
+            if (response.Succeeded)
             {
-                return BadRequest(result.Message);
+                var productResource = _mapper.Map<Product, ProductResource>(response.Data);
+                return Ok(new ResponseWrapper<ProductResource>(productResource));
             }
-            var productResource = _mapper.Map<Product, ProductResource>(result.Resource);
-            return Ok(productResource);
+            return BadRequest(response);
+            
         }
-
+        /*
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveProductResource resource)
         {
@@ -55,17 +98,20 @@ namespace SupermarketAPI.Controllers
             {
                 return BadRequest(result.Message);
             }
-            var productResource = _mapper.Map<Product, ProductResource>(result.Resource);
+            var productResource = _mapper.Map<Product, ProductResource>(result.Data);
             return Ok(productResource);
-        }
+        }*/
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _productService.DeleteAsync(id);
-            if (!result.Success) return BadRequest(result.Message);
-            var productResource = _mapper.Map<Product, ProductResource>(result.Resource);
-            return Ok(productResource);
+            var response = await _productApplication.Remove(id);
+            if (response.Succeeded)
+            {
+                var productResource = _mapper.Map<Product, ProductResource>(response.Data);
+                return Ok(new ResponseWrapper<ProductResource>(productResource));
+            }
+            return BadRequest(response);
         }
     }
 }

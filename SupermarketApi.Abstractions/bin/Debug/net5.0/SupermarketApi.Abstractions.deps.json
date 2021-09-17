@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SupermarketApi.Abstractions/1.0.0": {
+        "dependencies": {
+          "SupermarketApi.Entities": "1.0.0"
+        },
+        "runtime": {
+          "SupermarketApi.Abstractions.dll": {}
+        }
+      },
+      "SupermarketApi.Entities/1.0.0": {
+        "runtime": {
+          "SupermarketApi.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SupermarketApi.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SupermarketApi.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

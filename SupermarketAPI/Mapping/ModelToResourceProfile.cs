@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using SupermarketAPI.Domain.Models;
-using SupermarketAPI.Resources;
+using SupermarketApi.WebApi.Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using SupermarketAPI.Extensions;
+using SupermarketApi.Entities;
 
 namespace SupermarketAPI.Mapping
 {
@@ -17,7 +17,10 @@ namespace SupermarketAPI.Mapping
         public ModelToResourceProfile()
         {
             CreateMap<Category, CategoryResource>();
-            CreateMap<Category, CategoryResource>();
+            CreateMap<Category, CategoryNameResource>();
+            //CreateMap<Product, ProductResource>();
+            CreateMap<Order, OrderResource>();
+            CreateMap<OrderProducts, OrderProductsResource>();
             CreateMap<Product, ProductResource>().ForMember(src => src.UnitOfMeasurement,
                 opt => opt.MapFrom(src => src.UnitOfMeasurement.ToDescriptionString()));
         }

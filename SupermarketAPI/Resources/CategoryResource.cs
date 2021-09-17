@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SupermarketAPI.Resources
+namespace SupermarketApi.WebApi.Resources
 {
     /*
      * A resource class contains only basic information that will be exchanged between client applications 

@@ -1,0 +1,12 @@
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\bin\Debug\net5.0\SupermarketApi.Entities.deps.json
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\bin\Debug\net5.0\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\bin\Debug\net5.0\ref\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\bin\Debug\net5.0\SupermarketApi.Entities.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\SupermarketApi.Entities.csproj.AssemblyReference.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\SupermarketApi.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\SupermarketApi.Entities.AssemblyInfoInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\SupermarketApi.Entities.AssemblyInfo.cs
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\SupermarketApi.Entities.csproj.CoreCompileInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\ref\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Entities\obj\Debug\net5.0\SupermarketApi.Entities.pdb
