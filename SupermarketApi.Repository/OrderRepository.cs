@@ -17,9 +17,14 @@ namespace SupermarketApi.Repository
             _orderContext = context;
         }
 
-        public async Task AddWithProductAsync(Order entity, int[] productsIds)
+        public async Task AddWithProductAsync(Order entity, List<int> productsIds)
         {
-            await _orderContext.AddWithProductAsync(entity, productsIds);
+            await _orderContext.AddWithProductsAsync(entity, productsIds);
+        }
+
+        public async Task UpdateWithProductsAsync(Order entity, List<int> productsIds)
+        {
+            await _orderContext.UpdateWithProductsAsync(entity, productsIds);
         }
     }
 }

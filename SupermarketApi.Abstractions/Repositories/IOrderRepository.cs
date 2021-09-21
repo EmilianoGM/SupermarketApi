@@ -9,6 +9,7 @@ namespace SupermarketApi.Abstractions.Repositories
 {
     public interface IOrderRepository : IRepository<Order>
     {
-        Task AddWithProductAsync(Order entity, int[] productsIds);
+        Task AddWithProductAsync(Order entity, List<int> productsIds);
+        Task UpdateWithProductsAsync(Order entity, List<int> productsIds);
     }
 }

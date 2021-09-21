@@ -9,6 +9,7 @@ namespace SupermarketApi.Abstractions.Contexts
 {
     public interface IOrderDbContext : IDataBaseContext<Order>
     {
-        Task AddWithProductAsync(Order entity, int[] productsIds);
+        Task AddWithProductsAsync(Order entity, List<int> productsIds);
+        Task UpdateWithProductsAsync(Order entity, List<int> productsIds);
     }
 }

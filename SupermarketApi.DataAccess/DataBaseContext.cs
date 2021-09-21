@@ -30,21 +30,26 @@ namespace SupermarketApi.DataAccess
             await _context.SaveChangesAsync();
         }
 
-        public async Task<T> FindByIdAsync(int id)
+        public virtual async Task<T> FindByIdAsync(int id)
         {
             return await _items.FindAsync(id);
         }
 
-        public async Task<T> Update(T entity)
+        public virtual async Task<T> Update(T entity)
         {
             _items.Update(entity);
             await _context.SaveChangesAsync();
             return entity;
         }
 
-        public async void Remove(T entity)
+        public virtual async void Remove(T entity)
         {
             _items.Remove(entity);
+            await _context.SaveChangesAsync();
+        }
+
+        public async void SaveChangesAsync()
+        {
             await _context.SaveChangesAsync();
         }
     }

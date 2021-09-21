@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SupermarketApi.Abstractions\SupermarketApi.Abstractions.csproj" />
+    <ProjectReference Include="..\SupermarketAPI.Application\SupermarketApi.Application.csproj" />
+    <ProjectReference Include="..\SupermarketApi.DataAccess\SupermarketApi.DataAccess.csproj" />
+    <ProjectReference Include="..\SupermarketApi.Entities\SupermarketApi.Entities.csproj" />
+    <ProjectReference Include="..\SupermarketApi.Repository\SupermarketApi.Repository.csproj" />
+    <ProjectReference Include="..\SupermarketApi.Services\SupermarketApi.Services.csproj" />
+  </ItemGroup>
+
+</Project>

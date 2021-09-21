@@ -19,7 +19,7 @@ namespace SupermarketApi.Application
             _orderRepository = repository;
         }
 
-        public async Task<IResponseWrapper<Order>> AddAsyncWithProduct(Order order, int[] productIds)
+        public async Task<IResponseWrapper<Order>> AddAsyncWithProduct(Order order, List<int> productIds)
         {
             try
             {
@@ -29,6 +29,21 @@ namespace SupermarketApi.Application
             catch (Exception ex)
             {
                 return new ResponseWrapper<Order>("An error ocurred while saving the entity.", ex.Message);
+            }
+        }
+
+        public async Task<IResponseWrapper<Order>> UpdateWithProductsAsync(Order order, List<int> productsIds)
+        {
+            try
+            {
+                await _orderRepository.UpdateWithProductsAsync(order, productsIds);
+                Order updatedOrder = await _orderRepository.FindByIdAsync(order.OrderId);
+                return new ResponseWrapper<Order>(updatedOrder);
+            }
+            catch (Exception ex)
+            {
+
+                return new ResponseWrapper<Order>("An error ocurred while updating the entity.", ex.Message);
             }
         }
     }
