@@ -12,8 +12,8 @@ namespace SupermarketApi.Abstractions.Applications
         Task<IResponseWrapper<IEnumerable<T>>> ListAsync();
         Task<IResponseWrapper<T>> AddAsync(T entity);
         Task<IResponseWrapper<T>> FindByIdAsync(int id);
-        Task<IResponseWrapper<T>> Remove(int id);
-        Task<IResponseWrapper<T>> Update(T entity);
+        Task<IResponseWrapper<T>> RemoveAsync(int id);
+        Task<IResponseWrapper<T>> UpdateAsync(T entity);
     }
 
 }

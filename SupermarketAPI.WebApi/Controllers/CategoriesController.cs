@@ -16,35 +16,22 @@ namespace SupermarketAPI.Controllers
      * All responses from API endpoints must return a resource.
      */
     [Route("api/[controller]")]
-    public class CategoriesController: Controller
+    [ApiController]
+    public class CategoriesController: ControllerBase
     {
-        private readonly ICategoryApplication _categories;
+        private readonly ICategoryApplication _categoryApplication;
         private readonly IMapper _mapper;
 
         public CategoriesController(IMapper mapper, ICategoryApplication categories)
         {
-            _categories = categories;
+            _categoryApplication = categories;
             _mapper = mapper;
         }
-
-        /*
-         *  Map the enumeration of categories to an enumeration of resources.
-         */
-        /*
-        [HttpGet]
-        public async Task<IEnumerable<CategoryResource>> GetAllAsync()
-        {
-            var categories = await _categoryService.ListAsync();
-            var resources = _mapper.Map<IEnumerable<Category>, IEnumerable<CategoryResource>>(categories);
-
-            return resources;
-        }*/
-
-        
+    
         [HttpGet]
         public async Task<IActionResult> GetAsync()
         {
-            var categoriesResponse = await _categories.ListAsync();
+            var categoriesResponse = await _categoryApplication.ListAsync();
             if (categoriesResponse.Succeeded)
             {
                 var categoriesResource = _mapper.Map<IEnumerable<Category>, IEnumerable<CategoryResource>>(categoriesResponse.Data);
@@ -52,25 +39,22 @@ namespace SupermarketAPI.Controllers
             } else
             {
                 return BadRequest(categoriesResponse);
-            }
-            /*
-            var categories = await _categoryService.ListAsync();
-            var resources = _mapper.Map<IEnumerable<Category>, IEnumerable<CategoryResource>>(categories);
-            return Ok(new PagedResponse<IEnumerable<CategoryResource>>(resources));*/
+            }            
         }
 
-        /*
+        
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
-            var result = await _categoryService.FindByIdAsync(id);
-            if(!result.Success)
+            var result = await _categoryApplication.FindByIdAsync(id);
+            if(result.Succeeded)
             {
-                return BadRequest(result.Message);
+                var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
+                return Ok(new ResponseWrapper<CategoryResource>(categoryResource));
+                
             }
-            var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
-            return Ok(categoryResource);
-        }*/
+            return BadRequest(result);
+        }
 
         /*
         [HttpGet]
@@ -94,45 +78,48 @@ namespace SupermarketAPI.Controllers
          * Methods present in controller classes are called actions, and they have this signature because we can return
          * more than one possible result after the application executes the action.
          */
-        /*
+        
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveCategoryResource resource)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState.GetErrorMessages());
-            var category = _mapper.Map<SaveCategoryResource, Category>(resource);
-            var result = await _categoryService.SaveAsync(category);
-            if (!result.Success) return BadRequest(result.Message);
-            var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
-            return Ok(categoryResource);
-        }*/
+            Category category = _mapper.Map<SaveCategoryResource, Category>(resource);
+            var result = await _categoryApplication.AddAsync(category);
+            if (result.Succeeded)
+            {
+                var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
+                return Ok(new ResponseWrapper<CategoryResource>(categoryResource));
+            }
+            return BadRequest(result);
+        }
 
         /*
          * The ASP.NET Core pipeline parse the id fragment to the parameter of the same name.
-         */
+        */
 
-        /*
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveCategoryResource resource)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState.GetErrorMessages());
             var category = _mapper.Map<SaveCategoryResource, Category>(resource);
-            var result = await _categoryService.UpdateAsync(id, category);
-            if (!result.Success)
+            category.Id = id;
+            var result = await _categoryApplication.UpdateAsync(category);
+            if (result.Succeeded)
             {
-                return BadRequest(result.Message);
+                var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
+                return Ok(new ResponseWrapper<CategoryResource>(categoryResource));
             }
-
-            var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
-            return Ok(categoryResource);
+            return BadRequest(result);            
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _categoryService.DeleteAsync(id);
-            if (!result.Success) return BadRequest(result.Message);
-            var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
-            return Ok(categoryResource);
-        }*/
+            var result = await _categoryApplication.RemoveAsync(id);
+            if (result.Succeeded)
+            {
+                var categoryResource = _mapper.Map<Category, CategoryResource>(result.Data);
+                return Ok(categoryResource);
+            }
+            return BadRequest(result);
+        }
     }
 }

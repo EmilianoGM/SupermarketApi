@@ -10,6 +10,6 @@ namespace SupermarketApi.Abstractions.Contexts
     public interface IOrderProductsDbContext : IDataBaseContext<OrderProducts>
     {
         Task<IEnumerable<OrderProducts>> ListByOrderIdAsync(int id);
-        Task<IEnumerable<int>> ListProductsIdsByOrderId(int id);
+        IEnumerable<int> ListProductsIdsByOrderId(IEnumerable<OrderProducts> orderProductsEnumerable);
     }
 }

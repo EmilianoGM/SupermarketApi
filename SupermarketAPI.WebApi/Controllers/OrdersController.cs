@@ -29,7 +29,6 @@ namespace SupermarketApi.WebApi.Controllers
         public async Task<IActionResult> GetListAsync()
         {
             var orderResponse = await _orderApplication.ListAsync();
-
             if (orderResponse.Succeeded)
             {
                 var orderResource = _mapper.Map<IEnumerable<Order>, IEnumerable<OrderResource>>(orderResponse.Data);
@@ -44,12 +43,8 @@ namespace SupermarketApi.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveOrderResource resource)
         {
-            var test = _mapper.Map<SaveOrderResource, Order>(resource);
-            var order = new Order();
-            order.Date = Convert.ToDateTime(resource.Date);
-            order.TotalPrice = resource.TotalPrice;
-            order.Address = resource.Address;
-            var response = await _orderApplication.AddAsyncWithProduct(order, resource.ProductsId);
+            Order order = _mapper.Map<SaveOrderResource, Order>(resource);
+            var response = await _orderApplication.AddWithProductsAsync(order, resource.ProductsId);
             if (response.Succeeded)
             {
                 var orderResource = _mapper.Map<Order, OrderResource>(response.Data);
@@ -61,7 +56,7 @@ namespace SupermarketApi.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var response = await _orderApplication.Remove(id);
+            var response = await _orderApplication.RemoveAsync(id);
             if (response.Succeeded)
             {
                 var orderResource = _mapper.Map<Order, OrderResource>(response.Data);
@@ -73,11 +68,8 @@ namespace SupermarketApi.WebApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveOrderResource resource)
         {
-            var order = new Order();
+            Order order = _mapper.Map<SaveOrderResource, Order>(resource);
             order.OrderId = id;
-            order.Date = Convert.ToDateTime(resource.Date);
-            order.TotalPrice = resource.TotalPrice;
-            order.Address = resource.Address;
             var response = await _orderApplication.UpdateWithProductsAsync(order, resource.ProductsId);
             if (response.Succeeded)
             {

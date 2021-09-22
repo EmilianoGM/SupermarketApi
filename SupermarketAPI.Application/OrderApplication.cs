@@ -19,7 +19,7 @@ namespace SupermarketApi.Application
             _orderRepository = repository;
         }
 
-        public async Task<IResponseWrapper<Order>> AddAsyncWithProduct(Order order, List<int> productIds)
+        public async Task<IResponseWrapper<Order>> AddWithProductsAsync(Order order, List<int> productIds)
         {
             try
             {

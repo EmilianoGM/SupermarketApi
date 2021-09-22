@@ -64,7 +64,7 @@ namespace SupermarketApi.Application
             }
         }
 
-        public async Task<IResponseWrapper<T>> Remove(int id)
+        public async Task<IResponseWrapper<T>> RemoveAsync(int id)
         {
             try
             {
@@ -85,7 +85,7 @@ namespace SupermarketApi.Application
             }
         }
 
-        public async Task<IResponseWrapper<T>> Update(T entity)
+        public async Task<IResponseWrapper<T>> UpdateAsync(T entity)
         {
             try
             {

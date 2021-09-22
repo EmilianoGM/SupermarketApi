@@ -11,8 +11,7 @@ namespace SupermarketApi.WebApi.Resources
         [Required]
         [MaxLength(30)]
         public string Name { get; set; }
-        [Required]  
-        [Range(0, 100)]
+        [Required]
         public short QuantityInPackage { get; set; }
         [Required]
         [Range(1,5)]

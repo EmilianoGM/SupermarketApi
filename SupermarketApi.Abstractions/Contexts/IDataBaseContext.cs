@@ -8,6 +8,6 @@ namespace SupermarketApi.Abstractions.Contexts
 {
     public interface IDataBaseContext<T> : ICrudAsync<T>
     {
-        void SaveChangesAsync();
+        Task<int> SaveChangesAsync();
     }
 }

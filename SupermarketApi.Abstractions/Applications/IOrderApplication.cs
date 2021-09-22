@@ -10,7 +10,7 @@ namespace SupermarketApi.Abstractions.Applications
 {
     public interface IOrderApplication : IApplication<Order>
     {
-        Task<IResponseWrapper<Order>> AddAsyncWithProduct(Order order, List<int> productIds);
+        Task<IResponseWrapper<Order>> AddWithProductsAsync(Order order, List<int> productIds);
         Task<IResponseWrapper<Order>> UpdateWithProductsAsync(Order order, List<int> productsIds);
     }
 }

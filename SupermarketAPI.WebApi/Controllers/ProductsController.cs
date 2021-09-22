@@ -13,6 +13,7 @@ using SupermarketApi.Application.Communication;
 namespace SupermarketAPI.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class ProductsController : Controller
     {
         private readonly IProductApplication _productApplication;
@@ -28,16 +29,12 @@ namespace SupermarketAPI.Controllers
         public async Task<IActionResult> GetListAsync()
         {
             var productsResponse = await _productApplication.ListAsync();
-
             if (productsResponse.Succeeded)
             {
                 var productsResource = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(productsResponse.Data);
                 return Ok(new ResponseWrapper<IEnumerable<ProductResource>>(productsResource));
             }
-            else
-            {
-                return BadRequest(productsResponse);
-            }
+            return BadRequest(productsResponse);
         }
 
         [HttpGet]
@@ -45,16 +42,12 @@ namespace SupermarketAPI.Controllers
         public async Task<IActionResult> GetListByNameAsync(string name)
         {
             var productsResponse = await _productApplication.ListByNameAsync(name);
-
             if (productsResponse.Succeeded)
             {
                 var productsResource = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(productsResponse.Data);
                 return Ok(new ResponseWrapper<IEnumerable<ProductResource>>(productsResource));
             }
-            else
-            {
-                return BadRequest(productsResponse);
-            }
+            return BadRequest(productsResponse);
         }
 
         [HttpGet]
@@ -67,16 +60,12 @@ namespace SupermarketAPI.Controllers
                 var productsResource = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(productsResponse.Data);
                 return Ok(new ResponseWrapper<IEnumerable<ProductResource>>(productsResource));
             }
-            else
-            {
-                return BadRequest(productsResponse);
-            }
+            return BadRequest(productsResponse);
         }
 
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveProductResource resource)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState.GetErrorMessages());
             var product = _mapper.Map<SaveProductResource, Product>(resource);
             var response = await _productApplication.AddAsync(product);
             if (response.Succeeded)
@@ -85,27 +74,27 @@ namespace SupermarketAPI.Controllers
                 return Ok(new ResponseWrapper<ProductResource>(productResource));
             }
             return BadRequest(response);
-            
         }
-        /*
+
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveProductResource resource)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState.GetErrorMessages());
-            var product = _mapper.Map<SaveProductResource, Product>(resource);
-            var result = await _productService.UpdateAsync(id, product);
-            if (!result.Success)
+            Product product = _mapper.Map<SaveProductResource, Product>(resource);
+            product.Id = id;
+            var result = await _productApplication.UpdateAsync(product);
+            if (result.Succeeded)
             {
-                return BadRequest(result.Message);
+                var productResource = _mapper.Map<Product, ProductResource>(result.Data);
+                return Ok(new ResponseWrapper<ProductResource>(productResource));
             }
-            var productResource = _mapper.Map<Product, ProductResource>(result.Data);
-            return Ok(productResource);
-        }*/
+            return BadRequest(result);
+        }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var response = await _productApplication.Remove(id);
+            var response = await _productApplication.RemoveAsync(id);
             if (response.Succeeded)
             {
                 var productResource = _mapper.Map<Product, ProductResource>(response.Data);

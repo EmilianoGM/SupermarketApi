@@ -16,16 +16,25 @@ namespace SupermarketApi.DataAccess
 
         }
 
+        public override async Task AddAsync(OrderProducts entity)
+        {
+            await _items.AddAsync(entity);
+        }
+
+        public override void Remove(OrderProducts entity)
+        {
+            _items.Remove(entity);
+        }
+
         public async Task<IEnumerable<OrderProducts>> ListByOrderIdAsync(int id)
         {
             return await _items.Where(op => op.OrderId == id).ToListAsync();
         }
 
-        public async Task<IEnumerable<int>> ListProductsIdsByOrderId(int id)
+        public IEnumerable<int> ListProductsIdsByOrderId(IEnumerable<OrderProducts> orderProductsEnumerable)
         {
             List<int> producstIds = new List<int>();
-            List<OrderProducts> orderProducts = (List<OrderProducts>)await ListByOrderIdAsync(id);
-            foreach (OrderProducts orderProduct in orderProducts)
+            foreach (OrderProducts orderProduct in orderProductsEnumerable)
             {
                 producstIds.Add(orderProduct.ProductId);
             }

@@ -48,9 +48,9 @@ namespace SupermarketApi.DataAccess
             await _context.SaveChangesAsync();
         }
 
-        public async void SaveChangesAsync()
+        public async Task<int> SaveChangesAsync()
         {
-            await _context.SaveChangesAsync();
+           return await _context.SaveChangesAsync();
         }
     }
 }

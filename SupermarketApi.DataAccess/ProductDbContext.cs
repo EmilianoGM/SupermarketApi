@@ -28,7 +28,7 @@ namespace SupermarketApi.DataAccess
 
         public async Task<IEnumerable<Product>> ListByNameAsync(string name)
         {
-            return await _items.Where(p => p.Name == name).Include(p => p.Category).ToListAsync();
+            return await _items.Where(p => p.Name.Equals(name,StringComparison.OrdinalIgnoreCase)).Include(p => p.Category).ToListAsync();
         }
     }
 }
