@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqEfxdW4UhXgi9tyGsXsvclOakG018VXWAocFstCMTrhOWPm2o4qJIt4NegDBxfmhQPBxaXURiyq9PT6CaRfvw==",
+  "dgSpecHash": "CUG5zjNe1HWgWXhiGzGu5ZxP3L0h1q4Q2ogEMm9mugtWIdDXr7KiygKWmrQjRIivrRVl6Pac1DJLwHoxcecTtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Repository\\SupermarketApi.Repository.csproj",
+  "projectFilePath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Repository\\SupermarketApi.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emigm\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\emigm\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

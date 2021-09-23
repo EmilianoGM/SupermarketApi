@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Services\\SupermarketApi.Services.csproj": {}
+    "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Services\\SupermarketApi.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Services\\SupermarketApi.Services.csproj": {
+    "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Services\\SupermarketApi.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Services\\SupermarketApi.Services.csproj",
+        "projectUniqueName": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Services\\SupermarketApi.Services.csproj",
         "projectName": "SupermarketApi.Services",
-        "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Services\\SupermarketApi.Services.csproj",
+        "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Services\\SupermarketApi.Services.csproj",
         "packagesPath": "C:\\Users\\emigm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Services\\obj\\",
+        "outputPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\emigm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

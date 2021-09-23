@@ -19,3 +19,24 @@ C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Repository\obj\De
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Repository\obj\Debug\net5.0\ref\SupermarketApi.Repository.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Repository.deps.json
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Repository.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\ref\SupermarketApi.Repository.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Repository.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Abstractions.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.DataAccess.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Services.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Abstractions.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.DataAccess.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Entities.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\bin\Debug\net5.0\SupermarketApi.Services.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.csproj.AssemblyReference.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.AssemblyInfoInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.AssemblyInfo.cs
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.csproj.CoreCompileInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.csproj.CopyComplete
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\ref\SupermarketApi.Repository.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Repository\obj\Debug\net5.0\SupermarketApi.Repository.pdb

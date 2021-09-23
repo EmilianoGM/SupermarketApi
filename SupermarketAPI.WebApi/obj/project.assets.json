@@ -1845,24 +1845,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emigm\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\emigm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketAPI.WebApi\\SupermarketApi.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketAPI.WebApi\\SupermarketApi.WebApi.csproj",
       "projectName": "SupermarketApi.WebApi",
-      "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketAPI.WebApi\\SupermarketApi.WebApi.csproj",
+      "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketAPI.WebApi\\SupermarketApi.WebApi.csproj",
       "packagesPath": "C:\\Users\\emigm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketAPI.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketAPI.WebApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\emigm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1876,14 +1871,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketAPI.Application\\SupermarketApi.Application.csproj": {
-              "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketAPI.Application\\SupermarketApi.Application.csproj"
+            "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketAPI.Application\\SupermarketApi.Application.csproj": {
+              "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketAPI.Application\\SupermarketApi.Application.csproj"
             },
-            "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Entities\\SupermarketApi.Entities.csproj": {
-              "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Entities\\SupermarketApi.Entities.csproj"
+            "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Entities\\SupermarketApi.Entities.csproj": {
+              "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Entities\\SupermarketApi.Entities.csproj"
             },
-            "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Services\\SupermarketApi.Services.csproj": {
-              "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketApi.Services\\SupermarketApi.Services.csproj"
+            "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Services\\SupermarketApi.Services.csproj": {
+              "projectPath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketApi.Services\\SupermarketApi.Services.csproj"
             }
           }
         }
@@ -1935,7 +1930,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

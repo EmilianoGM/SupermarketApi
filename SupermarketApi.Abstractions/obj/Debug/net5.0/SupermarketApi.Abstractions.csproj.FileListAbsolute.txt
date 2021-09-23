@@ -13,3 +13,18 @@ C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Abstractions\obj\
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Abstractions\obj\Debug\net5.0\ref\SupermarketApi.Abstractions.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\bin\Debug\net5.0\SupermarketApi.Abstractions.deps.json
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\bin\Debug\net5.0\SupermarketApi.Abstractions.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\bin\Debug\net5.0\ref\SupermarketApi.Abstractions.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\bin\Debug\net5.0\SupermarketApi.Abstractions.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\bin\Debug\net5.0\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\bin\Debug\net5.0\SupermarketApi.Entities.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.csproj.AssemblyReference.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.AssemblyInfoInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.AssemblyInfo.cs
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.csproj.CopyComplete
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\ref\SupermarketApi.Abstractions.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Abstractions\obj\Debug\net5.0\SupermarketApi.Abstractions.pdb

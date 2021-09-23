@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = SupermarketApi.WebApi
-build_property.ProjectDir = C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketAPI.WebApi\
+build_property.ProjectDir = C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketAPI.WebApi\

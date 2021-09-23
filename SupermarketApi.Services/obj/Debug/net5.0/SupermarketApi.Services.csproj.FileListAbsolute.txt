@@ -10,3 +10,15 @@ C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Services\obj\Debu
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Services\obj\Debug\net5.0\ref\SupermarketApi.Services.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\SupermarketApi.Services.deps.json
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\SupermarketApi.Services.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\ref\SupermarketApi.Services.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\SupermarketApi.Services.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.csproj.AssemblyReference.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.AssemblyInfoInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.AssemblyInfo.cs
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.csproj.CoreCompileInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\ref\SupermarketApi.Services.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.pdb

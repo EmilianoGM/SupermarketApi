@@ -17,3 +17,22 @@ C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.DataAccess\obj\De
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.DataAccess\obj\Debug\net5.0\ref\SupermarketApi.DataAccess.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.DataAccess.deps.json
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.DataAccess.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\ref\SupermarketApi.DataAccess.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.DataAccess.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.Abstractions.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.Services.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.Abstractions.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.Entities.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\bin\Debug\net5.0\SupermarketApi.Services.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.csproj.AssemblyReference.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.AssemblyInfoInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.AssemblyInfo.cs
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.csproj.CopyComplete
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\ref\SupermarketApi.DataAccess.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.DataAccess\obj\Debug\net5.0\SupermarketApi.DataAccess.pdb

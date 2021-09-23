@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aHOWazoUSykzkPdVma8hfncer5gliUhrhKXISsGcq0dum9/WsPOiWynwzQXiQ8dAxlz0WI38jdRdcoV05dutuA==",
+  "dgSpecHash": "JS6EA+MjmoKMMQWa4soU0hhed3GDvOVhJw//aQ//ruGhO83DlV5aNeGfSLlrm1iOC4X+rtxX7IHOFaPhNaFF4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI\\SupermarketAPI.WebApi\\SupermarketApi.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\emigm\\Desktop\\Apps .NET\\SupermarketAPI v1.1\\SupermarketAPI.WebApi\\SupermarketApi.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emigm\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\emigm\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
