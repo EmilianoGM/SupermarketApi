@@ -22,3 +22,8 @@ C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\ref\SupermarketApi.Services.dll
 C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\SupermarketApi.Abstractions.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\SupermarketApi.Entities.dll
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\SupermarketApi.Abstractions.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\bin\Debug\net5.0\SupermarketApi.Entities.pdb
+C:\Users\emigm\Desktop\Apps .NET\SupermarketAPI v1.1\SupermarketApi.Services\obj\Debug\net5.0\SupermarketApi.Services.csproj.CopyComplete

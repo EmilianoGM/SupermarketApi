@@ -19,6 +19,12 @@ using SupermarketApi.Application;
 using SupermarketApi.Abstractions.Repositories;
 using SupermarketApi.Repository;
 using SupermarketApi.Abstractions.Contexts;
+using SupermarketApi.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity;
+using SupermarketApi.Abstractions.Services;
 
 namespace SupermarketAPI
 {
@@ -39,8 +45,37 @@ namespace SupermarketAPI
             //Add db context 
             services.AddDbContext<SupermarketDbContext>(options =>
             {
-                options.UseMySQL(Configuration.GetConnectionString("SupermarketConnectionString"));
+                options.UseMySQL(Configuration.GetConnectionString("SupermarketConnectionString"), b => {
+                    b.MigrationsAssembly("SupermarketApi.WebApi");
+                });
             });
+            // JWY Auth | Identity
+            services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(jwt =>
+            {
+                var key = Encoding.ASCII.GetBytes(Configuration["JwtConfig:Secret"]);
+                jwt.SaveToken = true;
+                jwt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    RequireExpirationTime = false,
+                    ValidateLifetime = true
+                };
+            });
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<SupermarketDbContext>();
+
+            //Add scoped for depency injection
+            //Services
+            services.AddScoped(typeof(ITokenHandlerService), typeof(TokenHandlerService));
             //Add scoped for depency injection
             //App
             services.AddScoped(typeof(IApplication<>), typeof(Application<>));
@@ -89,6 +124,8 @@ namespace SupermarketAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

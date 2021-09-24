@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SupermarketApi.Entities;
 using System;
 
@@ -7,7 +8,7 @@ namespace SupermarketApi.DataAccess
     /*
      * Must inherit DbContext, a class EF Core uses to map models to database tables.
     */
-    public class SupermarketDbContext : DbContext
+    public class SupermarketDbContext : IdentityDbContext
     {
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
@@ -26,6 +27,7 @@ namespace SupermarketApi.DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.ToTable("categories");

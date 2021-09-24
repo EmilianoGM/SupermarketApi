@@ -9,12 +9,15 @@ using SupermarketAPI.Extensions;
 using SupermarketApi.Abstractions.Applications;
 using SupermarketApi.Entities;
 using SupermarketApi.Application.Communication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace SupermarketAPI.Controllers
 {
     /*
      * All responses from API endpoints must return a resource.
      */
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController: ControllerBase
